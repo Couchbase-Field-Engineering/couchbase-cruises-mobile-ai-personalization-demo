@@ -8,8 +8,6 @@ A guest-facing cruise app that personalizes itself from the guest context Couchb
 * LLM calls go through AOM's **LLM Caching** gateway
 * every booking (room upgrades, Shore Excursions, dining, packages, spa, check-in) runs as an RBAC-checked, traced and audited AOM tool call, with human approval for complimentary upgrades
 
-The app's structure is based on [Fujio-Turner/mobile_field_service](https://github.com/Fujio-Turner/mobile_field_service): Expo / React Native, Couchbase Lite via `cbl-reactnative`, Sync Gateway session auth, and offline-first writes that sync when the radio comes back.
-
 *Screenshots: run the stack and open `https://localhost:5157`.*
 
 ---
