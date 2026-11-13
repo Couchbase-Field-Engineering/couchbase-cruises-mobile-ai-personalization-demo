@@ -1,0 +1,13 @@
+apiVersion: v2
+name: cruises-app
+description: >-
+  Couchbase Cruises mobile personalization demo on Kubernetes: Couchbase Server
+  (guest profiles from the daily Adobe Real-Time CDP export), Sync Gateway (Couchbase Lite
+  replication for phones), the backend (FastAPI + the cbc-guest-services MCP
+  server, which registers itself with the Couchbase Agent Operations Manager),
+  the app in a browser, and a daily CronJob that drops a new mock Real-Time CDP
+  export.
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords: [couchbase, couchbase-lite, sync-gateway, mcp, rag, personalization]

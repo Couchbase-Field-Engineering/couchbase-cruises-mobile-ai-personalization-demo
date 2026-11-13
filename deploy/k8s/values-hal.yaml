@@ -1,0 +1,26 @@
+# cruises-app on "hal" (single-node K3s) at 192.168.111.5.
+# Secrets (the AOM admin password) are NOT kept here - deploy.sh writes them to
+# a mode-600 values file on the node instead.
+publicHost: "192.168.111.5"
+# No LoadBalancer implementation on the node: publish on its IP directly.
+externalIPs: ["192.168.111.5"]
+
+aom:
+  enabled: true
+  # The AOM behind the public IP (the NOV procurement demo's). Its dashboard
+  # proxies the API, so the backend talks to the dashboard URL. It is outside
+  # this cluster, so it reaches this demo's MCP server through the backend
+  # port published on hal's IP.
+  url: https://45.52.200.223:3111
+  mcpPublicUrl: http://192.168.111.5:8201/cbc/mcp
+  # Linked from the story page.
+  dashboardUrl: https://45.52.200.223:3111
+
+# hal runs this demo alone, so it keeps 8082 / 8201 / 4986 (mother uses 8085 / 8204 / 4989);
+# pass --backend http://192.168.111.5:8201 to the scripts when targeting hal.
+web:
+  service: { type: LoadBalancer, port: 8082 }
+backend:
+  service: { type: LoadBalancer, port: 8201 }
+syncGateway:
+  service: { type: LoadBalancer, port: 4986 }
