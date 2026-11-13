@@ -96,7 +96,7 @@ export default function MyCruise() {
                 <Text style={styles.itemTitle}>{q.title}</Text>
                 {q.summary ? <Text style={styles.meta}>{q.summary}</Text> : null}
                 <Text style={styles.tiny}>
-                  {q.governed ? 'Governed by Agent Operations Manager' : q._local ? 'Queued in Couchbase Lite' : 'Processed'}
+                  {q.governed ? 'Governed by Couchbase Labs Agent Operations Manager' : q._local ? 'Queued in Couchbase Lite' : 'Processed'}
                   {q.trace_id ? ` · trace ${q.trace_id.slice(0, 8)}` : ''}
                 </Text>
               </View>

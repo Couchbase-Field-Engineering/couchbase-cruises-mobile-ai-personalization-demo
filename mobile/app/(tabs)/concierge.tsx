@@ -24,7 +24,7 @@ function llmLabel(m: ChatMessage): { label: string; tone: 'ok' | 'info' | 'neutr
   if (s === 'hit_exact') return { label: 'LLM cache · exact hit', tone: 'ok' };
   if (s === 'hit_semantic') return { label: `LLM cache · semantic hit${m.llm?.similarity ? ` ${m.llm.similarity.toFixed(2)}` : ''}`, tone: 'ok' };
   if (s === 'miss') return { label: `LLM cache · miss${m.llm?.latency_ms ? ` · ${Math.round(m.llm.latency_ms)}ms` : ''}`, tone: 'neutral' };
-  if (s === 'local') return { label: 'Composed from context (AOM not configured)', tone: 'neutral' };
+  if (s === 'local') return { label: 'Composed from context (Couchbase Labs Agent Operations Manager not configured)', tone: 'neutral' };
   if (s === 'bypass') return { label: 'LLM cache · bypassed', tone: 'neutral' };
   return { label: `LLM · ${s}`, tone: 'warn' };
 }
@@ -55,7 +55,7 @@ export default function Concierge() {
           <View style={styles.bot}><Ionicons name="sparkles" size={18} color={theme.color.onAccent} /></View>
           <View style={{ flex: 1 }}>
             <Text style={styles.title}>Concierge</Text>
-            <Text style={styles.subtitle}>Couchbase Cruises Guest Concierge agent · governed by Couchbase AOM</Text>
+            <Text style={styles.subtitle}>Couchbase Cruises Guest Concierge agent · governed by Couchbase Labs Agent Operations Manager</Text>
           </View>
         </View>
         <View style={{ marginTop: 10 }}><SyncBadge sync={sync} dark /></View>
@@ -66,7 +66,7 @@ export default function Concierge() {
           <View style={styles.intro}>
             <Text style={styles.introTitle}>Hi{snap.profile ? ` ${snap.profile.first_name}` : ''}! How can I make this sailing perfect?</Text>
             <Text style={styles.introBody}>
-              I know your reservation, preferences and today's offers. Answers come from your Couchbase context cache and the AOM Knowledge
+              I know your reservation, preferences and today's offers. Answers come from your Couchbase context cache and the Couchbase Labs Agent Operations Manager Knowledge
               Base - and when you're offline, straight from your phone.
             </Text>
           </View>

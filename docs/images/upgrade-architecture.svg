@@ -3,7 +3,7 @@
 <rect x="0" y="0" width="1900" height="1120" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5"/>
 <g transform="translate(40,32) scale(1.55)"><circle cx="12" cy="12" r="12" fill="#EC1218"/><path fill="#fff" d="M20.111 14.104a1.467 1.458 0 0 1-1.235 1.503c-1.422.244-4.385.398-6.875.398s-5.454-.15-6.877-.398c-.814-.14-1.235-.787-1.235-1.503V9.417a1.57 1.56 0 0 1 1.235-1.505 15.72 15.619 0 0 1 2.156-.14.537.533 0 0 1 .523.543v3.303c1.463 0 2.727-.086 4.201-.086 1.474 0 2.727.086 4.196.086V8.342a.535.532 0 0 1 .494-.569h.027a15.995 15.891 0 0 1 2.156.14 1.57 1.56 0 0 1 1.234 1.504z"/></g>
 <text x="92" y="48" font-size="22" fill="#101820" font-weight="800" text-anchor="start">Couchbase</text>
-<text x="92" y="68" font-size="12.5" fill="#6B7280" font-weight="500" text-anchor="start">Agent Operations Manager · Couchbase Cruises mobile personalization demo</text>
+<text x="92" y="68" font-size="12.5" fill="#6B7280" font-weight="500" text-anchor="start">Couchbase Labs Agent Operations Manager · Couchbase Cruises mobile personalization demo</text>
 <text x="1860" y="48" font-size="20" fill="#101820" font-weight="800" text-anchor="end">Upgrading a stateroom: the chatbot, the RAG application, and the RAG_KB and AIDP buckets</text>
 <text x="1860" y="68" font-size="12.5" fill="#6B7280" font-weight="500" text-anchor="end">Numbered steps follow one guest's upgrade. Lettered steps show the RAG application answering a playbook question on its own LLM path.</text>
 <rect x="40" y="82" width="1820" height="3" fill="#EC1218"/>
@@ -31,7 +31,7 @@
 <text x="344" y="422" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">requests</text>
 <rect x="520" y="120" width="410" height="400" rx="14" fill="#F4F5F7" stroke="#D9DDE3" stroke-width="1.5"/>
 <text x="534" y="144" font-size="14" fill="#101820" font-weight="800" text-anchor="start">Demo backend  (FastAPI)</text>
-<text x="534" y="162" font-size="11.5" fill="#6B7280" font-weight="500" text-anchor="start">Two AOM agent identities; one MCP server AOM calls back into</text>
+<text x="534" y="162" font-size="11.5" fill="#6B7280" font-weight="500" text-anchor="start">Two Couchbase Labs Agent Operations Manager agent identities; one MCP server Couchbase Labs Agent Operations Manager calls back into</text>
 <rect x="534" y="186" width="382" height="98" rx="14" fill="#E7F0FC" stroke="#0F6FDE" stroke-width="1.5"/>
 <text x="548" y="210" font-size="14" fill="#0F6FDE" font-weight="800" text-anchor="start">Chatbot  ·  Couchbase Cruises Guest Concierge</text>
 <text x="548" y="228" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">agent id cbc-guest-concierge · all 11 tools. Personal questions:</text>
@@ -53,7 +53,7 @@
 <text x="746" y="467" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">get_upgrade_offers,</text>
 <text x="746" y="482" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">purchase_cabin_upgrade, …</text>
 <rect x="990" y="120" width="710" height="400" rx="14" fill="#F4F5F7" stroke="#EC1218" stroke-width="1.5"/>
-<text x="1004" y="144" font-size="14" fill="#101820" font-weight="800" text-anchor="start">Couchbase Agent Operations Manager  (AI Data Plane)</text>
+<text x="1004" y="144" font-size="14" fill="#101820" font-weight="800" text-anchor="start">Couchbase Labs Agent Operations Manager  (AI Data Plane)</text>
 <text x="1004" y="162" font-size="11.5" fill="#6B7280" font-weight="500" text-anchor="start">Identities · RBAC · approvals · traces · audit · budgets · caches · memory</text>
 <rect x="1004" y="196" width="220" height="98" rx="14" fill="#FFFFFF" stroke="#D9DDE3" stroke-width="1.5"/>
 <text x="1018" y="220" font-size="14" fill="#101820" font-weight="800" text-anchor="start">Context Cache</text>
@@ -90,7 +90,7 @@
 <text x="1030" y="475.0" font-size="11" fill="#2B3440" font-weight="400" text-anchor="start">LLM Cache · Context Cache · Agent Memory · Knowledge Base.</text>
 <text x="1030" y="489.5" font-size="11" fill="#2B3440" font-weight="400" text-anchor="start">Cost per answer is visible on every trace.</text>
 <text x="1424" y="446.0" font-size="11" fill="#6B7280" font-weight="400" text-anchor="start">The chatbot and the RAG app are two</text>
-<text x="1424" y="460.5" font-size="11" fill="#6B7280" font-weight="400" text-anchor="start">different AOM callers: separate</text>
+<text x="1424" y="460.5" font-size="11" fill="#6B7280" font-weight="400" text-anchor="start">different Couchbase Labs Agent Operations Manager callers: separate</text>
 <text x="1424" y="475.0" font-size="11" fill="#6B7280" font-weight="400" text-anchor="start">namespaces, budgets, cache hit rates</text>
 <text x="1424" y="489.5" font-size="11" fill="#6B7280" font-weight="400" text-anchor="start">and traces, even on one LLM provider.</text>
 <rect x="1724" y="196" width="136" height="98" rx="14" fill="#E4F4EC" stroke="#0E8A5F" stroke-width="1.5"/>
@@ -106,7 +106,7 @@
 <text x="1738" y="388" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">+ memory; short</text>
 <text x="1738" y="403" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">call on a hit</text>
 <text x="1792" y="440" font-size="10.5" fill="#6B7280" font-weight="500" text-anchor="middle">same or different</text>
-<text x="1792" y="454" font-size="10.5" fill="#6B7280" font-weight="500" text-anchor="middle">provider: AOM routes,</text>
+<text x="1792" y="454" font-size="10.5" fill="#6B7280" font-weight="500" text-anchor="middle">provider: Couchbase Labs Agent Operations Manager routes,</text>
 <text x="1792" y="468" font-size="10.5" fill="#6B7280" font-weight="500" text-anchor="middle">caches and meters</text>
 <text x="1792" y="482" font-size="10.5" fill="#6B7280" font-weight="500" text-anchor="middle">each path separately</text>
 <rect x="40" y="640" width="1820" height="240" rx="14" fill="#F4F5F7" stroke="#EC1218" stroke-width="1.5"/>
@@ -116,7 +116,7 @@
 <text x="68" y="724" font-size="14" fill="#101820" font-weight="800" text-anchor="start">cruises  ·  application bucket</text>
 <text x="68" y="742" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">scope cbc, replicated to phones through Sync Gateway</text>
 <text x="68" y="757" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">profiles · offers · bookings · inventory (CAS) · requests (offline-first outbox) · concierge chat · catalog</text>
-<text x="68" y="772" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">context_cache: the phone's copy of AOM's Context Cache entry, so the concierge answers at sea</text>
+<text x="68" y="772" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">context_cache: the phone's copy of Couchbase Labs Agent Operations Manager's Context Cache entry, so the concierge answers at sea</text>
 <text x="68" y="787" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start"></text>
 <text x="68" y="802" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">System of record - the upgrade is applied here (step 12).</text>
 <rect x="990" y="700" width="330" height="166" rx="14" fill="#E4F4EC" stroke="#0E8A5F" stroke-width="1.5"/>
@@ -134,7 +134,7 @@
 <text x="1354" y="772" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">agent identities + keys · tool catalog · approvals</text>
 <text x="1354" y="787" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">traces · audit log · budgets and usage</text>
 <text x="1354" y="802" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start"></text>
-<text x="1354" y="817" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">Written by both agents and the RAG application, only through AOM.</text>
+<text x="1354" y="817" font-size="11.5" fill="#2B3440" font-weight="400" text-anchor="start">Written by both agents and the RAG application, only through Couchbase Labs Agent Operations Manager.</text>
 <path d="M 276 240 L 534 240" fill="none" stroke="#0F6FDE" stroke-width="2.2" marker-end="url(#arr-0F6FDE)" stroke-linejoin="round"/>
 <circle cx="405" cy="240" r="12.5" fill="#0F6FDE" stroke="#FFFFFF" stroke-width="2.5"/>
 <text x="405" y="244.5" font-size="12.5" fill="#FFFFFF" font-weight="800" text-anchor="middle">1</text>
@@ -197,17 +197,17 @@
 <rect x="40" y="900" width="1820" height="200" rx="14" fill="#FFFFFF" stroke="#D9DDE3" stroke-width="1.5"/>
 <text x="54" y="924" font-size="14" fill="#101820" font-weight="800" text-anchor="start">Data flow: upgrading a stateroom reservation</text>
 <text x="54" y="948" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">1   Guest asks the chatbot about a suite upgrade (typed on the phone; sent when connected).</text>
-<text x="54" y="964" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">2   Chatbot checks AOM's Context Cache for guest · upgrade · today's export · profile revision - a miss on the first ask.</text>
+<text x="54" y="964" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">2   Chatbot checks Couchbase Labs Agent Operations Manager's Context Cache for guest · upgrade · today's export · profile revision - a miss on the first ask.</text>
 <text x="54" y="980" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">3   Chatbot retrieves from the Knowledge Base (RAG_KB bucket), scoped to this guest's own profile document plus the playbook.</text>
 <text x="54" y="996" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">4   Chatbot calls get_upgrade_offers through the Tool gateway → MCP server → live inventory in the cruises bucket.</text>
 <text x="54" y="1012" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">5   Context is stored in the Context Cache (AIDP) and copied to the cruises bucket for the phone; the chatbot LLM generates the answer.</text>
 <text x="54" y="1028" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">6   Answer returns with action chips: "Bid $135/night" and "Upgrade now · $3,290".</text>
 <text x="54" y="1044" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">7   Guest taps Upgrade now → Confirm: a pending request document is written in Couchbase Lite, online or not.</text>
 <text x="930" y="948" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">8   Sync Gateway pushes it into the cruises bucket; the worker claims it.</text>
-<text x="930" y="964" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">9   Upgrade tools are routed to the Stateroom Upgrade Agent - its own AOM identity, scoped to 5 tools.</text>
+<text x="930" y="964" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">9   Upgrade tools are routed to the Stateroom Upgrade Agent - its own Couchbase Labs Agent Operations Manager identity, scoped to 5 tools.</text>
 <text x="930" y="980" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">10  The agent recalls the guest's stateroom history and preferences from Agent Memory (AIDP bucket).</text>
 <text x="930" y="996" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">11  The agent invokes purchase_cabin_upgrade via the Tool gateway: identity, RBAC, scope, trace, audit.</text>
-<text x="930" y="1012" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">12  AOM calls the MCP server, which applies it in the cruises bucket: inventory (CAS), stateroom, booking, re-ranked offers, context invalidated.</text>
+<text x="930" y="1012" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">12  Couchbase Labs Agent Operations Manager calls the MCP server, which applies it in the cruises bucket: inventory (CAS), stateroom, booking, re-ranked offers, context invalidated.</text>
 <text x="930" y="1028" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">13  The result syncs back ("Confirmed"); the agent writes the episode to Agent Memory, which the chatbot recalls on its next room question.</text>
 <text x="930" y="1044" font-size="11.3" fill="#2B3440" font-weight="400" text-anchor="start">A–C Separately, playbook questions go to the RAG application: Context Cache → Knowledge Base (RAG_KB) → LLM Cache → its own LLM; one answer, shared by every guest.</text>
 <rect x="1330" y="910" width="12" height="12" rx="3" fill="#0F6FDE"/>

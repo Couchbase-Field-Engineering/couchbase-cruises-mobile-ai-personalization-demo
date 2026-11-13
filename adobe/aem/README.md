@@ -10,7 +10,7 @@ answer, keywords, effective dates) and published through AEM's GraphQL API.
 
 Every morning, after the Real-Time CDP export loads, the backend fetches the
 published entries, renders today's playbook document and publishes it to the
-AOM Knowledge Base; the concierge's RAG application is re-scoped to that
+Couchbase Labs Agent Operations Manager Knowledge Base; the concierge's RAG application is re-scoped to that
 document. Offer copy (upgrade, dining, spa cards) uses the same fragments.
 
 Without an AEM endpoint configured (`AEM_GRAPHQL_ENDPOINT`), the backend

@@ -22,11 +22,11 @@ Lines, one profile per line, under `exportTime=YYYYMMDD/`:
 (dataset, destination, schedule 05:00 ET, JSON, one file per partition).
 The backend's loader (`backend/app/loader.py`) picks up each new partition,
 upserts one `profiles` document per guest into Couchbase, re-ranks offers and
-publishes the AOM Knowledge Base. Sync Gateway puts each guest's documents on
+publishes the Couchbase Labs Agent Operations Manager Knowledge Base. Sync Gateway puts each guest's documents on
 their phone. `adobe/generate_mock_export.py` writes a 100 MiB mock of that
 export so the demo runs without an Adobe sandbox.
 
-## 2. Profile Access API (real time) -> AOM Context Cache
+## 2. Profile Access API (real time) -> Couchbase Labs Agent Operations Manager Context Cache
 
 When the concierge builds a guest's context (a Context Cache miss), it reads
 the **current** profile from Real-Time CDP's Profile Access API - audience
@@ -39,7 +39,7 @@ or opens an email:
         &fields=segmentMembership,_couchbasecruises.propensity,_couchbasecruises.loyalty
     Authorization: Bearer <IMS access token>   x-api-key   x-gw-ims-org-id   x-sandbox-name
 
-That round trip is what AOM's Context Cache saves: the assembled context is
+That round trip is what Couchbase Labs Agent Operations Manager's Context Cache saves: the assembled context is
 stored with the real `source_latency_ms`, keyed by the export date and the
 profile revision, so a booking or the next export invalidates it, and the
 same document syncs to the phone for offline answers.

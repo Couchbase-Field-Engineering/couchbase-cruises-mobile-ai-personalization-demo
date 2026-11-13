@@ -4,7 +4,7 @@
  *  1. this guest's earlier answers (`concierge` doc `answers`, keyed by normalized question)
  *  2. the playbook FAQ synced in the `catalog` doc
  *  3. the guest's context cache (`context_cache` docs the server assembled
- *     from the AOM Knowledge Base + tool facts) - e.g. upgrade options
+ *     from the Couchbase Labs Agent Operations Manager Knowledge Base + tool facts) - e.g. upgrade options
  *
  * Mirrors backend/app/concierge.py's intent keywords so the same question
  * lands on the same cached context offline as online.

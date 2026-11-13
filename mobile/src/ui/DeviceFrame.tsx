@@ -82,12 +82,12 @@ function StatusBarOverlay({ dark, offline, background }: { dark: boolean; offlin
 function SidePanel() {
   const [reset, setReset] = useState<{ busy: boolean; line: string }>({ busy: false, line: '' });
   const resetDemo = async () => {
-    if (!window.confirm("Reset the demo? Olivia, Carlos and Priya go back to today's export (requests, stateroom, chat, cached context), their AOM memories are deleted and the concierge's AOM caches are purged.")) return;
+    if (!window.confirm("Reset the demo? Olivia, Carlos and Priya go back to today's export (requests, stateroom, chat, cached context), their Couchbase Labs Agent Operations Manager memories are deleted and the concierge's Couchbase Labs Agent Operations Manager caches are purged.")) return;
     setReset({ busy: true, line: 'Resetting…' });
     try {
       const r = await api<{ summary: { guests: number; requests_removed: number; memories_deleted: number }; export_date: string }>(
         '/api/demo/reset', { method: 'POST', body: {}, timeoutMs: 120000 });
-      setReset({ busy: false, line: `Reset done: ${r.summary.guests} guests back to export ${r.export_date}, ${r.summary.requests_removed} requests removed, ${r.summary.memories_deleted} AOM memories deleted. Reloading…` });
+      setReset({ busy: false, line: `Reset done: ${r.summary.guests} guests back to export ${r.export_date}, ${r.summary.requests_removed} requests removed, ${r.summary.memories_deleted} Couchbase Labs Agent Operations Manager memories deleted. Reloading…` });
       setTimeout(() => window.location.assign('/login'), 1200);
     } catch (e) {
       setReset({ busy: false, line: `Reset failed: ${(e as Error).message}` });
@@ -99,11 +99,11 @@ function SidePanel() {
       <Text style={styles.panelTitle}>Your cruise, personalized</Text>
       <Text style={styles.panelBody}>
         Every screen renders from the guest's on-device database, synced from Adobe Real-Time CDP's daily guest profile export. The
-        concierge is an agent governed by the Couchbase Agent Operations Manager.
+        concierge is an agent governed by the Couchbase Labs Agent Operations Manager.
       </Text>
       {[
         ['phone-portrait-outline', 'Couchbase Lite', 'Offline-first: bookings queue on the phone while on excursions and sync when online'],
-        ['sparkles-outline', 'LLM and Context Caching', 'Answers, and guest context from Adobe Real-Time CDP, cached in Couchbase Agent Operations Manager'],
+        ['sparkles-outline', 'LLM and Context Caching', 'Answers, and guest context from Adobe Real-Time CDP, cached in Couchbase Labs Agent Operations Manager'],
         ['shield-checkmark-outline', 'Governed agents', 'Confirm runs the Stateroom Upgrade agent, with Couchbase Agent Memory'],
       ].map(([icon, title, body]) => (
         <View key={title} style={styles.point}>
