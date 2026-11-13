@@ -101,8 +101,8 @@ def current_guest(authorization: str | None = Header(default=None)) -> str:
 async def index():
     """Landing page: where everything in the demo lives."""
     rows = [
-        ("http://localhost:8081/story", "The story: why Couchbase, not Redis, for an offline-first AI guest app (start here)"),
-        ("http://localhost:8081", "The app in a browser (docker compose service <code>web</code>)"),
+        ("https://localhost:5157/story", "The story: why Couchbase, not Redis, for an offline-first AI guest app (start here)"),
+        ("https://localhost:5157", "The app in a browser (docker compose service <code>web</code>)"),
         ("http://localhost:8200/api/status", "Backend status: Real-Time CDP export load, AEM playbook, Knowledge Base publishing, AOM, Sync Gateway"),
         ("http://localhost:8200/docs", "Backend API (OpenAPI)"),
         ("http://localhost:8200/cbc/mcp", "MCP server <code>cbc-guest-services</code> (called by AOM)"),
@@ -115,7 +115,7 @@ async def index():
 <style>body{{font-family:-apple-system,Arial,sans-serif;max-width:760px;margin:48px auto;padding:0 16px;color:#0B1530}}
 h1{{color:#000}} li{{margin:10px 0}} a{{color:#EC1218;font-weight:600}}</style></head>
 <body><h1>Couchbase Cruises personalization demo</h1>
-<p>This is the backend. Open the app at <a href="http://localhost:8081">http://localhost:8081</a>.
+<p>This is the backend. Open the app at <a href="https://localhost:5157">https://localhost:5157</a>.
 Loaded Real-Time CDP export: <b>{STATE.get("export_date") or "loading..."}</b> ({loader.STATUS.get("state")}).</p>
 <ul>{items}</ul></body></html>"""
 

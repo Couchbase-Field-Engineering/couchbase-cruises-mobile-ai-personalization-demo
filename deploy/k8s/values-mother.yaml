@@ -30,10 +30,10 @@ aom:
 #   avis-app      8083 / 8202 / 4987
 #   disney-app    8084 / 8203 / 4988
 # so this demo takes the next free set:
-#   8085 the app, 8204 the backend API, 4989 Sync Gateway (Couchbase Lite).
+#   5157 the app (HTTPS, behind the sign-in page), 8204 the backend API, 4989 Sync Gateway (Couchbase Lite).
 # AOM's dashboard is on 3111 (agent-ops chart, values-k3s.yaml).
 web:
-  service: { type: LoadBalancer, port: 8085 }
+  service: { type: LoadBalancer, port: 5157 }
 backend:
   service: { type: LoadBalancer, port: 8204 }
 syncGateway:

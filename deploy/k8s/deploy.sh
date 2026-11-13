@@ -181,11 +181,12 @@ kubectl get pods,svc -n $APP_NS 2>/dev/null || true
 
 HOST="${MOTHER#*@}"; [ "$MOTHER" = local ] && HOST=$(remote "hostname -I | awk '{print \$1}'")
 port() { python3 -c 'import re,sys; t=open(sys.argv[1]).read(); m=re.search(sys.argv[2]+r":\s*\n\s*service:.*?port:\s*(\d+)", t, re.S); print(m.group(1) if m else sys.argv[3])' "$VALUES_FILE" "$1" "$2"; }
-WEB_PORT=$(port web 8081); API_PORT=$(port backend 8200); SG_PORT=$(port syncGateway 4984)
+WEB_PORT=$(port web 5157); API_PORT=$(port backend 8200); SG_PORT=$(port syncGateway 4984)
 say "Done"
 cat <<MSG
   AOM dashboard:        https://$HOST:3111   (admin / your AOM admin password)
-  Couchbase Cruises app: http://$HOST:$WEB_PORT   (the story: http://$HOST:$WEB_PORT/story)
+  Couchbase Cruises app: https://$HOST:$WEB_PORT   (the story: https://$HOST:$WEB_PORT/story)
+                        (sign in: demo / Couchbase123! unless web.auth is overridden; self-signed certificate)
   Backend status:       http://$HOST:$API_PORT/api/status   (aom.registration should reach "registered")
   Couchbase Lite:       ws://$HOST:$SG_PORT/cruises
 
